@@ -1,0 +1,28 @@
+.wck-tabs {
+  [role="tablist"] {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    ul {
+      display: flex;
+      li {
+        display: block;
+        width: 80px;
+        padding: 5px 10px;
+        color: lightseagreen;
+        background: #fff;
+        text-align: center;
+        &[aria-selected="true"] {
+          color: #fff;
+          background: lightseagreen;
+        }
+      }
+    }
+  }
+  [role="tabpanel"] {
+    display: none;
+    &[aria-hidden="false"] {
+      display: block;
+    }
+  }  
+}

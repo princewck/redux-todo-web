@@ -21,7 +21,7 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react'],
+                    presets: ['es2015', 'react', 'stage-1'],
                     plugins: [
                         //按需加载组件
                     ]
@@ -79,7 +79,7 @@ module.exports = {
         hotOnly: true,
         stats: { colors: true }
     },
-    devtool: 'source-map',
+    devtool: 'eval-source-map',
     resolve: {
         extensions: ['.js', '.jsx', '.json', 'css', '.scss'],
         modules: [
